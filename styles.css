@@ -1,0 +1,199 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333; /* Texto oscuro para legibilidad */
+    background-color: #f4f7f9; /* Fondo muy claro */
+}
+
+/* UTILIDADES */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    color: #007bff; /* Azul primario para el título */
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+/* BOTONES CTA */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.primary {
+    background-color: #007bff; /* Azul brillante */
+    color: white;
+}
+
+.primary:hover {
+    background-color: #0056b3;
+}
+
+.secondary {
+    background-color: #28a745; /* Verde para destacar el llamado a la acción */
+    color: white;
+}
+
+.secondary:hover {
+    background-color: #1e7e34;
+}
+
+/* 1. HERO SECTION (HEADER) */
+.hero {
+    background-color: #007bff; /* Fondo azul fuerte */
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/* 2. ABOUT US SECTION */
+.about-us {
+    padding: 80px 0;
+    text-align: center;
+    background-color: white;
+}
+
+.about-us .intro-text {
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+.problems-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* Para que se ajusten en móviles */
+}
+
+.problem-item {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    width: 22%;
+    min-width: 200px;
+}
+
+.mission-text {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #0056b3;
+}
+
+/* 3. SERVICES SECTION */
+.services {
+    padding: 80px 0;
+    background-color: #e9f5ff; /* Tono de azul muy claro */
+    text-align: center;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.service-card h4 {
+    color: #28a745; /* Verde para los títulos de servicio */
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.target-audience {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* 4. CTA SECTION */
+.cta-section {
+    padding: 60px 0;
+    background-color: #343a40; /* Fondo oscuro para contraste */
+    color: white;
+    text-align: center;
+}
+
+.cta-section .section-title {
+    color: white;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* 5. CONTACT US (FOOTER) */
+.contact-footer {
+    background-color: #222;
+    color: #bbb;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 8px 0;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* MEDIA QUERIES (Para hacer que se vea bien en móviles) */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .problem-item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
