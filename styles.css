@@ -96,11 +96,11 @@ section {
 }
 
 .hero-content {
-    max-width: 55%; /* El contenido ocupa un poco más de la mitad */
+    max-width: 50%; /* 50% para el texto */
 }
 
 .hero-image {
-    max-width: 40%; /* La imagen ocupa el resto */
+    max-width: 45%; /* 45% para la imagen, más armonioso */
     height: auto;
     border-radius: 10px; 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -257,8 +257,18 @@ section {
     }
 /* Estilos para las imágenes en la sección "Más Sobre Nuestra Marca" */
 .problem-item .problem-icon {
-    max-width: 80px; /* Tamaño más pequeño para los íconos de problema */
+    max-width: 100%; /* ¡REGLA CLAVE: La imagen nunca supera el ancho del contenedor! */
     height: auto;
     margin-bottom: 15px;
-    border-radius: 5px; /* Bordes suaves para las imágenes */
+    border-radius: 5px; 
+    /* Si quieres que se vean más como iconos: */
+    max-height: 150px; /* Limita la altura de las imágenes en las tarjetas */
+    object-fit: contain; /* Asegura que la imagen se vea completa sin cortar */
 }
+
+/* Además, para asegurar que la tarjeta misma no se desborde, añade esto a .problem-item: */
+.problem-item {
+    overflow: hidden; /* Oculta cualquier cosa que intente salirse */
+    /* ... el resto de estilos de problem-item ... */
+}
+
