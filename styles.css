@@ -255,4 +255,10 @@ section {
         width: 100%;
         margin-bottom: 15px;
     }
+/* Estilos para las imágenes en la sección "Más Sobre Nuestra Marca" */
+.problem-item .problem-icon {
+    max-width: 80px; /* Tamaño más pequeño para los íconos de problema */
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px; /* Bordes suaves para las imágenes */
 }
