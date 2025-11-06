@@ -136,7 +136,7 @@ section {
     transition: transform 0.3s ease; /* Efecto hover */
     text-align: center;
     overflow: hidden; /* <--- CLAVE: Oculta el desbordamiento de las imágenes */
-    height: 300px; /
+
 }
 
 .problem-item:hover {
@@ -272,5 +272,6 @@ section {
     overflow: hidden; /* Oculta cualquier cosa que intente salirse */
     /* ... el resto de estilos de problem-item ... */
 }
+
 
 
