@@ -134,6 +134,9 @@ section {
     width: 22%;
     min-width: 200px;
     transition: transform 0.3s ease; /* Efecto hover */
+    text-align: center;
+    overflow: hidden; /* <--- CLAVE: Oculta el desbordamiento de las imágenes */
+    height: 300px; /
 }
 
 .problem-item:hover {
@@ -257,13 +260,11 @@ section {
     }
 /* Estilos para las imágenes en la sección "Más Sobre Nuestra Marca" */
 .problem-item .problem-icon {
-    max-width: 100%; /* ¡REGLA CLAVE: La imagen nunca supera el ancho del contenedor! */
-    height: auto;
+   max-width: 100%; 
+    height: 150px; /* <--- CLAVE: Altura fija para que todas las imágenes sean consistentes */
     margin-bottom: 15px;
     border-radius: 5px; 
-    /* Si quieres que se vean más como iconos: */
-    max-height: 150px; /* Limita la altura de las imágenes en las tarjetas */
-    object-fit: contain; /* Asegura que la imagen se vea completa sin cortar */
+    object-fit: cover; /* <--- CLAVE: Cubre el espacio asignado (150px) sin estirarse */
 }
 
 /* Además, para asegurar que la tarjeta misma no se desborde, añade esto a .problem-item: */
@@ -271,4 +272,5 @@ section {
     overflow: hidden; /* Oculta cualquier cosa que intente salirse */
     /* ... el resto de estilos de problem-item ... */
 }
+
 
